@@ -83,7 +83,7 @@ document.body.innerHTML += `
     <div class="inline"><button class="ui primary button" id="addbot">Add Bots</button><button class="ui inverted red button" id="clearall">Clear All</button> <button class="ui right labeled icon button" id="watchtheroom">Watch The Room<i class="external link icon"></i></button> <a href="https://www.facebook.com/imp1ka" target="_blank" class="ui 
 right floated inverted button"><i class="facebook icon"></i>Facebook</a>
 <a href="https://www.facebook.com/imp1ka" target="_blank" class="ui right floated
-inverted button"><i class="github icon"></i>Open Source Code</a></div> </div>
+inverted button"> </div>
   </div>
 </div>
 <div class="ui tiny modal">
@@ -367,7 +367,7 @@ iziToast.success({
     title: 'Successful',
     message: 'Script loaded',
 	buttons: [
-        ['<button>Open Source Code</button>', function (instance, toast) {
+        ['<button>Open Facebook</button>', function (instance, toast) {
             window.open("https://www.facebook.com/imp1ka");
         }, true],],
 });
