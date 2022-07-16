@@ -183,7 +183,7 @@ btn.addEventListener("click", function () {
     for (let i = 0; i < amount.value; i++) {
 	var iframe = document.createElement("iframe");
 	iframe.setAttribute('id', i);
-	if(proxymode == false){iframe.setAttribute('src', 'https://gartic.io/' + url.value);}else{iframe.setAttribute('src', 'https://www.proxysite.com');}
+	if(proxymode == false){iframe.setAttribute('src', 'https://gartic.io/' + url.value);}else{iframe.setAttribute('src', 'https://croxyproxy.com');}
 	if(performancemode == true) {iframe.style.display = 'none';}
 	if(i == amount.value -1){ iframe.setAttribute('onload', 'loaded();');}
 	div.appendChild(iframe);
