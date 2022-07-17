@@ -80,10 +80,10 @@ document.body.innerHTML += `
     </div></div>
 	
 	
-    <div class="inline"><button class="ui primary button" id="addbot">Add Bots</button><button class="ui inverted red button" id="clearall">Clear All</button> <button class="ui right labeled icon button" id="watchtheroom">Watch The Room<i class="external link icon"></i></button> <a href="https://www.facebook.com/imp1ka" target="_blank" class="ui 
-right floated inverted button"><i class="facebook icon"></i>Facebook</a>
-<a href="https://www.facebook.com/imp1ka" target="_blank" class="ui right floated
-inverted button"><i class="github icon"></i>Open Source Code</a></div> </div>
+    <div class="inline"><button class="ui primary button" id="addbot">Add Bots</button><button class="ui inverted red button" id="clearall">Clear All</button> <button class="ui right labeled icon button" id="watchtheroom">Watch The Room<i class="external link icon"></i></button> <a href="https://www.youtube.com/channel/UCgs8Nz3Msrl4GqX3DeOZ6tQ" target="_blank" class="ui 
+right floated inverted button"><i class="youtube icon"></i>YouTube</a>
+<a href="" target="_blank" class="ui right floated
+inverted button"><i class="github icon"></i></a></div> </div>
   </div>
 </div>
 <div class="ui tiny modal">
@@ -140,7 +140,7 @@ let spamtext = document.querySelector('#spamtext input');
 let kicktext = document.querySelector('#kickplayernick input');
 let kickbutton = document.querySelector('#kickpalyer');
 
-let scripturl = "https://github.com/karim1333/impskrip/tree/main/script/Gartic%20bot%20control.user.js";
+let scripturl = "https://github.com/karim1333/gartic.io-bot/tree/main/script/Gartic%20bot%20control.user.js";
 
 download.addEventListener("click", function () {
 	window.open(scripturl).close();
@@ -183,7 +183,7 @@ btn.addEventListener("click", function () {
     for (let i = 0; i < amount.value; i++) {
 	var iframe = document.createElement("iframe");
 	iframe.setAttribute('id', i);
-	if(proxymode == false){iframe.setAttribute('src', 'https://gartic.io/' + url.value);}else{iframe.setAttribute('src', 'https://croxyproxy.com');}
+	if(proxymode == false){iframe.setAttribute('src', 'https://gartic.io/' + url.value);}else{iframe.setAttribute('src', 'https://www.proxysite.com');}
 	if(performancemode == true) {iframe.style.display = 'none';}
 	if(i == amount.value -1){ iframe.setAttribute('onload', 'loaded();');}
 	div.appendChild(iframe);
@@ -237,7 +237,7 @@ watchtheroom.addEventListener("click", function () {
 url.onchange = function(){ url.value = url.value.replace("https://gartic.io/",""); };
 
 var performancemode = false;
-var mode = false;
+var proxymode = false;
 var profilepicture = 0;
 
 function loaded() {
@@ -367,8 +367,8 @@ iziToast.success({
     title: 'Successful',
     message: 'Script loaded',
 	buttons: [
-        ['<button>Open Facebook</button>', function (instance, toast) {
-            window.open("https://www.facebook.com/imp1ka");
+        ['<button>Open Source Code</button>', function (instance, toast) {
+            window.open("");
         }, true],],
 });
 }else{
