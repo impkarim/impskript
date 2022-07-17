@@ -12,7 +12,7 @@ document.body.innerHTML += `
       </div>
       <div class="field">
         <label>Room Code</label>
-        <div class="ui large labeled input" id="roomcode"><div class="ui label">https://gartic.io/ </div><input type="text" placeholder="Code"></div>
+        <div class="ui large labeled input" id="roomcode"><div class="ui label">https://gartic.io/ </div><input type="text" autofocus="Code"></div>
       </div>
       <div class="field" id="botamount">
         <label>Bot Amount</label>
