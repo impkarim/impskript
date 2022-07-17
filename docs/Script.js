@@ -366,10 +366,7 @@ iziToast.success({
 	//theme: 'dark',
     title: 'Successful',
     message: 'Script loaded',
-	buttons: [
-        ['<button>Open Source Code</button>', function (instance, toast) {
-            window.open("");
-        }, true],],
+	
 });
 }else{
 iziToast.error({
